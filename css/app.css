@@ -26,6 +26,7 @@ h6 {
 /*HEADER*/
 header {
     background: #0a314a;
+    padding: 10px 0 10px 0;
 }
 
 #navbarNavAltMarkup {
@@ -48,9 +49,54 @@ header .nav-link:focus {
 
 .logo {
     max-width: 100%;
-    width: 300px;
+    width: 280px;
 }
 
 .navbar-toggler {
     background-color: var(--color-primary);
+}
+
+
+
+/*JUMBOTRON*/
+.carousel-caption{
+    background: rgba(0, 0, 0, 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    background: #0a314a;
+    padding: 50px 0 50px 0;
+}
+.footer__logo{
+    max-width: 200px;
+}
+.footer__title{
+    color: #fff;
+    font-size: 20px;
+}
+.footer__list{
+    margin-top: 10px;
+}
+.footer__list li,
+.footer__list li a{
+    color: #fff;
+    text-decoration: none;
+}
+.copyright{
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 10px;
 }
