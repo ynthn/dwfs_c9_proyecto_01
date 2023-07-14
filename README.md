@@ -2,6 +2,7 @@
 
 * [Descripción del proyecto](#descripción-del-proyecto)
 * [Tecnologías utilizadas](#tecnologias-utilizadas)
+* [Prototipo](#prototipo)
 
 ## Descripción del Proyecto
 Se desarrollo un Landing page donde podremos observar un header, footer, Jumbotron, catálogo y adicionales.
@@ -11,3 +12,6 @@ Se desarrollo un Landing page donde podremos observar un header, footer, Jumbotr
 * -HTML 5
 * -CSS
 * -BOOTSTRAP 5.3
+
+## Prototipo
+![Prototipo](/images/prototipo.jpg)
