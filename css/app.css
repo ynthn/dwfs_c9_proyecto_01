@@ -86,28 +86,37 @@ header .nav-link:focus {
     gap: 50px;
     max-width: 100%;
 }
-.catalog__col{
+
+.catalog__col {
     border: 1px solid #999;
     border-radius: 10px;
 }
-.catalog__img{
+
+.catalog__img {
     max-width: 100%;
     width: 100%;
     border-radius: 10px 10px 0 0;
     transition: all ease 1s;
 }
-.catalog__img:hover{
+
+.catalog__img:hover {
     opacity: 50%;
 }
-.catalog__title{
+
+.catalog__title {
     font-size: 18px;
     font-weight: 900;
     padding: 4px 10px 4px 10px;
 }
-.catalog__detail{
+
+.catalog__detail {
     padding: 4px 10px 10px 10px;
 }
 
+.catalog__btn {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
 
 /*FOOTER*/
 footer {
@@ -157,8 +166,16 @@ footer {
 }
 
 
-
-
+/*COTIZAR*/
+.cotizar-box {
+    margin-top: 10px;
+}
+.form-label{
+    font-weight: 800;
+}
+.modal-body{
+    padding: 30px;
+}
 
 /*MEDIAS QUERIES*/
 @media only screen and (max-width: 800px) {

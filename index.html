@@ -60,11 +60,11 @@
                             <h3>Desarrollo de Sistemas Web</h3>
                             <p>Software personalizado para satisfacer las necesidades específicas de tu organización o
                                 empresa.</p>
-                            <form>
+                            <form onsubmit="return submitEmailWeb()">
                                 <div class="row">
                                     <div class="col-md-3 offset-md-3">
-                                        <input type="email" class="form-control" placeholder="Ingresa Tu E-mail"
-                                            required>
+                                        <input id="form_jumbotron_web" type="email" class="form-control"
+                                            placeholder="Ingresa Tu E-mail" required>
                                     </div>
                                     <div class="col-md-3">
                                         <button type="submit" class="form-control btn btn-primary">Solicitar
@@ -82,11 +82,11 @@
                         <div class="carousel-caption d-md-block">
                             <h3>Desarrollo de Sitios Web</h3>
                             <p>Desarrollamos tu Sitio Web en formato One Page o Multi Page</p>
-                            <form>
+                            <form onsubmit="return submitEmailSystem()">
                                 <div class="row">
                                     <div class="col-md-3 offset-md-3">
-                                        <input type="email" class="form-control" placeholder="Ingresa Tu E-mail"
-                                            required>
+                                        <input id="form_jumbotron_system" type="email" class="form-control"
+                                            placeholder="Ingresa Tu E-mail" required>
                                     </div>
                                     <div class="col-md-3">
                                         <button type="submit" class="form-control btn btn-primary">Solicitar
@@ -104,11 +104,11 @@
                         <div class="carousel-caption d-md-block">
                             <h5>Desarrollo de APP</h5>
                             <p>Desarrollollamos aplicaciones híbridas para plataformas iOS y Android</p>
-                            <form>
+                            <form onsubmit="return submitEmailApp()">
                                 <div class="row">
                                     <div class="col-md-3 offset-md-3">
-                                        <input type="email" class="form-control" placeholder="Ingresa Tu E-mail"
-                                            required>
+                                        <input id="form_jumbotron_app" type="email" class="form-control"
+                                            placeholder="Ingresa Tu E-mail" required>
                                     </div>
                                     <div class="col-md-3">
                                         <button type="submit" class="form-control btn btn-primary">Solicitar
@@ -231,6 +231,10 @@
                                 <div class="catalog__detail">
                                     Banner principal, descripción del servicio y formulario de contacto.
                                 </div>
+                                <div class="catalog__btn">
+                                    <button type="button" class="btn form-control btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#modal-cotizar">Cotizar</button>
+                                </div>
                             </div>
                             <div class="catalog__col">
                                 <img class="catalog__img" src="images/catalog-page.jpg">
@@ -238,12 +242,20 @@
                                 <div class="catalog__detail">
                                     Banner principal, quienes somos, servicios, productos y formulario de contacto.
                                 </div>
+                                <div class="catalog__btn">
+                                    <button type="button" class="btn form-control btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#modal-cotizar">Cotizar</button>
+                                </div>
                             </div>
                             <div class="catalog__col">
                                 <img class="catalog__img" src="images/catalog-page.jpg">
                                 <div class="catalog__title">Multi Page</div>
                                 <div class="catalog__detail">
                                     Banner principal, quienes somos, servicios, productos y formulario de contacto.
+                                </div>
+                                <div class="catalog__btn">
+                                    <button type="button" class="btn form-control btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#modal-cotizar">Cotizar</button>
                                 </div>
                             </div>
                             <div class="catalog__col">
@@ -253,6 +265,10 @@
                                     Banner principal, quienes somos, servicios, productos y formulario de contacto.
                                     Integración con 1 pasarela de pago a elección (webpay plus - mercado pago - getnet)
                                 </div>
+                                <div class="catalog__btn">
+                                    <button type="button" class="btn form-control btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#modal-cotizar">Cotizar</button>
+                                </div>
                             </div>
                             <div class="catalog__col">
                                 <img class="catalog__img" src="images/catalog-system.jpg">
@@ -261,6 +277,10 @@
                                     Según tus requerimientos desarrollamos el sistema con autentificación y módulos
                                     requeridos.
                                 </div>
+                                <div class="catalog__btn">
+                                    <button type="button" class="btn form-control btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#modal-cotizar">Cotizar</button>
+                                </div>
                             </div>
                             <div class="catalog__col">
                                 <img class="catalog__img" src="images/catalog-app.jpg">
@@ -268,6 +288,10 @@
                                 <div class="catalog__detail">
                                     Según tus requerimientos desarrollamos la APP con los módulos requeridos.
                                     Disponible para iOS y Android.
+                                </div>
+                                <div class="catalog__btn">
+                                    <button type="button" class="btn form-control btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#modal-cotizar">Cotizar</button>
                                 </div>
                             </div>
                         </div>
@@ -328,8 +352,47 @@
 
 
 
+
+
+    <div class="modal" tabindex="-1" id="modal-cotizar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deja tus datos y pronto te contactaremos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-submit" onsubmit="return submitCotizar()">
+                        <div class="row">
+                            <div class="col-md-12 cotizar-box">
+                                <label for="form_name" class="form-label">Ingresa tu nombre</label>
+                                <input id="form_name" type="text" maxlength="200" class="form-control" required>
+                            </div>
+                            <div class="col-md-12 cotizar-box">
+                                <label for="form_email" class="form-label">Ingres tu email</label>
+                                <input id="form_email" type="email" maxlength="200" class="form-control" required>
+                            </div>
+                            <div class="col-md-12 cotizar-box">
+                                <label for="form_message" class="form-label">Ingres tu mensaje</label>
+                                <textarea id="form_message" class="form-control" maxlength="200" required></textarea>
+                            </div>
+
+                            <div class="col-md-12 cotizar-box">
+                                <button class="form-control btn btn-success" type="submit">Enviar Datos</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
     <!--JAVASCRIPT-->
     <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
