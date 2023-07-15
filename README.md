@@ -10,11 +10,13 @@
 Se desarrollo un Landing page donde podremos observar un header, footer, Jumbotron, catálogo y adicionales.
 
 
+* Link GitHub Pages: https://ynthn.github.io/dwfs_c9_proyecto_01/
+
 ## 2. Tecnologías utilizadas
 * -HTML 5
 * -CSS
 * -BOOTSTRAP 5.3
-* -JavaScript
+* -JAVASCRIPT
 
 ## 3. Prototipo
 ![Prototipo](/images/prototipo.jpg)
