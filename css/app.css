@@ -67,19 +67,46 @@ header .nav-link:focus {
 
 
 /*MAIN GENERAL*/
-.main-title {
+.main__title {
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 50px;
     font-weight: 900;
 }
 
 
 /*SERVICES*/
-#service .card{
-margin-top: 10px;
+#service .card {
+    margin-top: 10px;
 }
 
-
+/*CATALOG*/
+.catalog__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 100%;
+}
+.catalog__col{
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+.catalog__img{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: all ease 1s;
+}
+.catalog__img:hover{
+    opacity: 50%;
+}
+.catalog__title{
+    font-size: 18px;
+    font-weight: 900;
+    padding: 4px 10px 4px 10px;
+}
+.catalog__detail{
+    padding: 4px 10px 10px 10px;
+}
 
 
 /*FOOTER*/
@@ -127,4 +154,16 @@ footer {
 
 .footer__rrss img {
     width: 30px;
+}
+
+
+
+
+
+/*MEDIAS QUERIES*/
+@media only screen and (max-width: 800px) {
+    .catalog__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

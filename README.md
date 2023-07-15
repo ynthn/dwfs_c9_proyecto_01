@@ -1,17 +1,18 @@
 # Proyecto 1: "Landing de Venta"
 
-* [Descripción del proyecto](#descripción-del-proyecto)
-* [Tecnologías utilizadas](#tecnologias-utilizadas)
-* [Prototipo](#prototipo)
+## Índice
+* [1. Descripción del proyecto](#descripción-del-proyecto)
+* [2. Tecnologías utilizadas](#tecnologias-utilizadas)
+* [3. Prototipo](#prototipo)
 
-## Descripción del Proyecto
+## 1. Descripción del Proyecto
 Se desarrollo un Landing page donde podremos observar un header, footer, Jumbotron, catálogo y adicionales.
 
 
-## Tecnologías utilizadas
+## 2. Tecnologías utilizadas
 * -HTML 5
 * -CSS
 * -BOOTSTRAP 5.3
 
-## Prototipo
+## 3. Prototipo
 ![Prototipo](/images/prototipo.jpg)
